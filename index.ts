@@ -5,7 +5,7 @@ interface Options {
 
 type Bucket = Map<any, any>;
 
-class HashMap {
+class HashTable {
   private storage: Map<any, Bucket> = new Map();
   private maxSizeOfBucket = 3;
   private hashingFuntion!: (key: string) => number;
